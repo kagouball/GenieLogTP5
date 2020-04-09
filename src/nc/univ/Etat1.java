@@ -11,7 +11,7 @@ public class Etat1 implements IEtat{
 
     @Override
     public void evenement2(Automate a) {
-        Etat2 e2 = (Etat2) a.getEtatCourant();
-        e2.evenement1(a);
+        //Etat2 e2 = (Etat2) a.getEtatCourant();
+        //e2.evenement1(a);
     }
 }
