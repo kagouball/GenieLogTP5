@@ -6,10 +6,7 @@ public class Automate implements IEvenement{
     private X controle;
 
     public Automate(){
-    }
-
-    public void setEtatCourant(IEtat etatCourant){
-        this.etatCourant = etatCourant;
+        etatCourant = new Etat1();
     }
 
     public IEtat getEtatCourant() {
@@ -17,7 +14,7 @@ public class Automate implements IEvenement{
     }
 
     public void changementEtat(IEtat etat){
-
+        etatCourant = etat;
     }
 
     public X getControle() {
@@ -35,6 +32,6 @@ public class Automate implements IEvenement{
 
     @Override
     public void evenement2() {
-
+        etatCourant.evenement2(this);
     }
 }

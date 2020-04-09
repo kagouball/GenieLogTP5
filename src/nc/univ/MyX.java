@@ -9,9 +9,13 @@ public class MyX {
         automate.setControle(x);
 
 
+
         Scanner sc = new Scanner(System.in);
         int choix = 3;
         while(choix != 0){
+            System.out.println("1 -> evenement 1" +
+                    "\n2 -> evenement 2" +
+                    "+\n0 -> quitter");
             choix = sc.nextInt();
 
             switch (choix){
