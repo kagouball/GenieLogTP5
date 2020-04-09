@@ -3,7 +3,7 @@ package nc.univ;
 public class Automate implements IEvenement{
 
     private IEtat etatCourant;
-    private ChronoProf2 controle;
+    private Chrono controle;
 
     public Automate(){
         etatCourant = new Etat1();
@@ -17,11 +17,11 @@ public class Automate implements IEvenement{
         etatCourant = etat;
     }
 
-    public ChronoProf2 getControle() {
+    public Chrono getControle() {
         return controle;
     }
 
-    public void setControle(ChronoProf2 controle) {
+    public void setControle(Chrono controle) {
         this.controle = controle;
     }
 
@@ -33,5 +33,15 @@ public class Automate implements IEvenement{
     @Override
     public void arreter() {
         etatCourant.arreter(this);
+    }
+
+    @Override
+    public void suspendre() {
+        etatCourant.suspendre(this);
+    }
+
+    @Override
+    public void reprendre() {
+        etatCourant.reprendre(this);
     }
 }

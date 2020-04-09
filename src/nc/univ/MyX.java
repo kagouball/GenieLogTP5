@@ -6,7 +6,7 @@ public class MyX {
     public static void main(String[] args) {
 
         Automate automate = new Automate();
-        Chrono chrono = new Chrono(automate);
+        ChronoMoi chrono = new ChronoMoi(automate);
         //automate.setControle(chrono);
 
 

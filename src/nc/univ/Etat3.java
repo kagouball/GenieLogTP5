@@ -1,12 +1,9 @@
 package nc.univ;
 
-public class Etat2 implements IEtat {
-
-
+public class Etat3 implements IEtat{
     @Override
     public void demarrer(Automate a) {
-        Chrono chrono = a.getControle();
-        chrono.lancerChrono();
+
     }
 
     @Override
@@ -18,13 +15,12 @@ public class Etat2 implements IEtat {
 
     @Override
     public void suspendre(Automate a) {
-        Chrono chrono = a.getControle();
-        chrono.suspendre();
-        a.changementEtat(new Etat3());
     }
 
     @Override
     public void reprendre(Automate a) {
-
+        Chrono chrono = a.getControle();
+        chrono.reprendreChrono();
+        a.changementEtat(new Etat2());
     }
 }
