@@ -1,6 +1,6 @@
 package nc.univ;
 
 public interface IEvenement {
-    public void evenement1();
-    public void evenement2();
+    public void demarrer();
+    public void arreter();
 }

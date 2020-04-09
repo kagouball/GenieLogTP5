@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class MyX {
     public static void main(String[] args) {
+
         Automate automate = new Automate();
-        X x = new X(automate);
-        automate.setControle(x);
+        Chrono chrono = new Chrono(automate);
+        //automate.setControle(chrono);
 
 
 
@@ -23,10 +24,10 @@ public class MyX {
                     System.out.println("BYE");
                     break;
                 case 1:
-                    x.evenement1();
+                    chrono.demarrer();
                     break;
                 case 2:
-                    x.evenement2();
+                    chrono.arreter();
                     break;
                 default:
                     System.out.println("WRONG");
