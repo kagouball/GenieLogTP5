@@ -19,7 +19,7 @@ public class Etat2 implements IEtat {
     @Override
     public void suspendre(Automate a) {
         Chrono chrono = a.getControle();
-        chrono.suspendre();
+        chrono.suspendreChrono();
         a.changementEtat(new Etat3());
     }
 
